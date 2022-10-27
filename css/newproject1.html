@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function btn1() {
+            var FN = document.getElementById("input1").value
+            var LN = document.getElementById("input2").value
+            var FLN = FN + " " + LN
+            document.getElementById("input3").value = FLN
+        }
+        function btn2() {
+            var FN = document.getElementById("input1").value = ""
+            var LN = document.getElementById("input2").value = ""
+            var FLN = FN + " " + LN
+            document.getElementById("input3").value = ""
+        }
+        function btn3() {
+            var A = document.getElementById("input4").value;
+            document.getElementById("input5").value = A
+        }
+        function btn4() {
+            var A = document.getElementById("input4").value = ""
+            document.getElementById("input5").value = ""
+        }
+    </script>
+    <style>
+        * {
+            margin: 0%;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        #maindiv {
+            background-color: rgb(10, 138, 155);
+            height: 860px;
+            width: 1200px;
+            position: relative;
+            left: 670px;
+            top: 200px;
+            border-radius: 150px 0px;
+            
+
+
+
+
+        }
+
+        .div0 {
+            border-radius: 30px 0px;
+            box-shadow: rgba(13, 13, 11, 0.838) 10px 10px;
+        }
+
+        #div1 {
+            background-color: rgba(243, 191, 179, 0.995);
+            height: 300px;
+            width: 350px;
+            border: 1px solid black;
+            /* border-radius: 15px; */
+            position: relative;
+            left: 150px;
+            top: 50px;
+            padding-left: 50px;
+
+        }
+
+        .input {
+            border-radius: 10px 0px;
+
+        }
+
+        #h11 {
+            position: relative;
+            left: 50px;
+
+        }
+
+        #h22 {
+            position: relative;
+            left: 50px;
+        }
+
+        #input1 {
+            position: relative;
+            left: 26px;
+
+        }
+
+        #input2 {
+            position: relative;
+
+
+        }
+
+        #input3 {
+            position: relative;
+            left: 26px;
+
+        }
+
+        #bt1 {
+            margin-left: 130px;
+        }
+
+        #div2 {
+            background-color: red;
+            height: 300px;
+            width: 350px;
+            border: solid black 1px;
+            position: relative;
+            left: 650px;
+            padding-left: 50px;
+            bottom: 252px;
+            /* border-radius: 15px; */
+            
+        }
+
+        #input4 {
+            position: relative;
+            left: 32px;
+
+
+
+        }
+
+        #input5 {
+            position: relative;
+            left: 40px;
+
+        }
+
+        .button {
+            border-radius: 10px 0px;
+        }
+
+        #bt3 {
+            margin-left: 130px;
+        }
+
+        #div3 {
+            background-color: yellowgreen;
+            height: 300px;
+            width: 350px;
+            border: 1px solid black;
+            position: relative;
+            left: 150px;
+            bottom: 150px;
+            padding-left: 50px;
+        }
+
+        #h33 {
+            position: relative;
+            left: 50px;
+        }
+  
+        #input6 {
+            position: relative;
+            left: 15px;
+        }
+
+        #bt5 {
+            margin-left: 130px;
+        }
+
+        #div4 {
+            background-color: blueviolet;
+            height: 300px;
+            width: 350px;
+            border: 1px solid black;
+            position: relative;
+            left: 650px;
+            bottom: 452px;
+            padding-left: 50px;
+        }
+        #h44{
+            padding-left: 50px
+        }
+        #bt7{
+            margin-left: 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="maindiv" class="container"><br>
+        <div id="maindiv1" class="container1">
+
+            <div id="div1" class="div0">
+                <br>
+                <h1 id="h11">Data Concading</h1><br><br>
+                Enter Name <input type="text" id="input1" class="input"><br><br>
+                Enter Sur Name <input type="text" id="input2" class="input"><br><br>
+                <button id="bt1" class="button" onclick="btn1()">Enter</button>
+                <button id="bt2" class="button" onclick="btn2()">Cancel</button><br><br>
+                FUll Name <input type="text" id="input3" class="input">
+            </div>
+
+            <div id="div2" class="div0"><br>
+                <h1 id="h22">Data Validation</h1><br><br>
+                Username <input type="text" id="input4" class="input"><br><br>
+                Password<input type="password" id="input5" class="input"><br><br>
+                <button id="bt3" class="button" onclick="btn3()">Enter</button>
+                <button id="bt4" class="button" onclick="btn4()">Cancel</button>
+            </div>
+            <div id="div3" class="div0"><br>
+                <h1 id="h33">Data Slicing</h1><br><br>
+                Input Name <input type="text" id="input6" class="input"><br><br>
+                Collect Words <input type="text" id="input7" class="input"><br><br>
+                <button id="bt5" class="button" onclick="btn5()">Enter</button>
+                <button id="bt6" class="button" onclick="btn6()">Cancel</button>
+            </div>
+            <div id="div4" class="div0"><br>
+                <h1 id="h44">Length Of Word</h1><br><br>
+                Input Name <input type="text" id="input8" class="input"><br><br>
+                Input Name <input type="text" id="input9" class="input"><br><br>
+                <button id="bt7" class="button" onclick="btn7()">Enter</button>
+                <button id="bt8" class="button" onclick="btn8()">Cancel</button>
+
+            </div>
+
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+
+</html>
